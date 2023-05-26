@@ -13,10 +13,10 @@ dotenv.config();
 // 3. Set up input data and paths
 const txtFilename = "pokemon";
 const question = `
-Translate the query into a sql, and reply as follows:
-{"sql": "sql"}
+If it is just asking a question , reply as follows:
+{"answer": "answer"}
 Example:
-{"sql": "select count(*) from pokemon where generation=1;"}
+{"answer": "The pokemon that has highest defense number is 'Gilead'"}
 
 If you do not know the answer, reply as follows:
 {"answer": "I do not know."}
