@@ -13,7 +13,7 @@ dotenv.config();
 // 3. Set up input data and paths
 const txtFilename = "pokemon";
 const question = `
-For database schema as '[{\"id\":10000,\"hint\":\"\",\"name\":\"Name\",\"type\":\"Text\"},{\"id\":\"10001\",\"hint\":\"\",\"name\":\"Type 1\",\"type\":\"Text\"},{\"id\":\"10002\",\"hint\":\"\",\"name\":\"Type 2\",\"type\":\"Text\"},{\"id\":\"10004\",\"hint\":\"\",\"name\":\"Total\",\"type\":\"Digit\"},{\"id\":\"10005\",\"hint\":\"\",\"name\":\"HP\",\"type\":\"Digit\"},{\"id\":\"10006\",\"hint\":\"\",\"name\":\"Attack\",\"type\":\"Digit\"},{\"id\":\"10007\",\"hint\":\"\",\"name\":\"Defense\",\"type\":\"Digit\"},{\"id\":\"10009\",\"hint\":\"\",\"name\":\"Sp. Atk\",\"type\":\"Digit\"},{\"id\":\"10010\",\"hint\":\"\",\"name\":\"Sp. Def\",\"type\":\"Digit\"},{\"id\":\"10011\",\"hint\":\"\",\"name\":\"Generation\",\"type\":\"Digit\"},{\"id\":\"10012\",\"hint\":\"\",\"name\":\"Legendary\",\"type\":\"Single Select\",\"config\":{\"enableOtherOption\":false},\"options\":[\"True\",\"False\"]}]', translate the query into a sql, and reply as follows:
+Translate the query into a sql, and reply as follows:
 {"sql": "sql"}
 Example:
 {"sql": "select count(*) from pokemon where generation=1;"}
@@ -27,7 +27,7 @@ Lets think step by step.
 
 Below is the query.
 Query: 
-` + "how many pokemon are generation 2?";
+` + "how which pokemon has the highest defense number?";
 // const question = `
 // For the following query, if it requires drawing a table, reply as follows:
 // {"table": {"columns": ["column1", "column2", ...], "data": [[value1, value2, ...], [value1, value2, ...], ...]}}
